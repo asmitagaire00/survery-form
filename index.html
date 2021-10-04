@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>survey-form</title>
+  </head>
+  <body>
+    <!-- whole page container -->
+    <div id="main">
+      <!-- text-container -->
+      <div class="text-container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking time your opinion counts!</p>
+      </div>
+      <!-- form container -->
+      <form id="survey-form" action="/action_page.php">
+        <label for="name-label" id="name-label">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        /><br />
+        <label for="email-label" id="email-label">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        /><br />
+        <label for="number-label" id="number-label">Number:</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="15"
+          max="90"
+          placeholder="Age"
+          required
+        /><br />
+        <!-- dropdown option -->
+        <input
+          list="dropdown"
+          name="browser"
+          placeholder="select current role"
+        />
+        <datalist id="dropdown">
+          <option value="Manager"></option>
+          <option value="Professor"></option>
+          <option value="Student"></option>
+          <option value="Worker"></option></datalist
+        ><br />
+        <!-- radio button options -->
+        <p>Which is your favourite tech-page?</p>
+        <input
+          type="radio"
+          id="opinion1"
+          name="favourite_page"
+          value="Freecodecamp"
+        />
+        <label for="opinion1">Freecodecamp</label><br />
+        <input
+          type="radio"
+          id="opinion2"
+          name="favourite_page"
+          value="Modern Javascript"
+        />
+        <label for="opinion2">Modern Javascript</label><br />
+        <input type="radio" id="opinion3" name="favourite_page" value="Mdn" />
+        <label for="opinion3">Mdn</label><br />
+
+        <!-- checkbox option -->
+        <p>How do you evaluate your favourite pages? Check all that apply.</p>
+        <input
+          type="checkbox"
+          id="opinion1"
+          name="favourite1"
+          value="Great Description"
+        />
+        <label for="opinion1">Great Description</label><br />
+        <input
+          type="checkbox"
+          id="opinion2"
+          name="favourite2"
+          value="Exercises"
+        />
+        <label for="opinion2">Exercises</label><br />
+        <input
+          type="checkbox"
+          id="opinion3"
+          name="favourite3"
+          value="Tutorials"
+        />
+        <label for="opinion3">Discussions</label><br />
+        <input
+          type="checkbox"
+          id="opinion3"
+          name="favourite4"
+          value="Comments Reply"
+        />
+        <label for="opinion3">Comments Reply</label><br />
+        <input
+          type="checkbox"
+          id="opinion3"
+          name="favourite5"
+          value="Projects"
+        />
+        <label for="opinion3">Projects</label><br />
+        <!-- additional comments -->
+        <textarea
+          name="comments"
+          id="comments"
+          cols="30"
+          rows="10"
+          placeholder="Enter your comments here.."
+        ></textarea>
+        <!-- submit button -->
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
