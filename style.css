@@ -1,4 +1,106 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /*10px */
+}
+
+body {
+  font-size: var(--default-font-size);
+  line-height: 1.7em;
+}
+
+:root {
+  --default-font-size: 1.6rem;
+  --font-size-xs: 1.4rem;
+  --font-size-s: 1.7rem;
+  --font-size-m: 2rem;
+  --font-size-l: 2.4rem;
+
+  --padding-xs: 1rem;
+  --padding-s: 1.5rem;
+  --padding-m: 2rem;
+  --padding-l: 4rem;
+  --padding-xl: 8rem;
+  --padding-xxl: 12rem;
+
+  --marigin-xs: 1rem;
+  --marigin-s: 1.5rem;
+  --marigin-m: 2rem;
+  --marigin-l: 4rem;
+  --marigin-xl: 8rem;
+  --marigin-xxl: 15rem;
+
+  --primary-color: rgb(233, 230, 230);
+  --secondary-color: white;
+}
+
+#main {
+  background-color: var(--primary-color);
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--default-font-size);
+}
+
+.text-container {
+  margin-top: var(--marigin-xs);
+  margin-bottom: var(--marigin-m);
+  /* background-color: var(--secondary-color); */
+}
+
+#title {
+  text-align: center;
+}
+
+#description {
+  padding-left: var(--padding-s);
+  padding-right: var(--padding-s);
+  padding-top: var(--padding-xs);
+}
+
+.form-container {
+  background-color: var(--secondary-color);
+  margin-bottom: var(--marigin-m);
+}
+
+#survey-form {
+  margin-left: var(--marigin-m);
+  margin-right: var(--marigin-m);
+}
+
+.form-class {
+  display: block;
+  font-size: var(--default-font-size);
+  margin-bottom: var(--marigin-xs);
+}
+
+#name,
+#email,
+#number,
+#role {
+  font-size: var(--default-font-size);
+  padding-left: var(--padding-xs);
+  padding-top: var(--padding-xs);
+  padding-bottom: var(--padding-xs);
+  width: 100%;
+}
+
+#comments {
+  font-size: var(--default-font-size);
+  display: block;
+  padding-left: var(--padding-xs);
+}
+
+#submit {
+  font-size: var(--default-font-size);
+  margin-top: var(--marigin-xs);
+  margin-bottom: var(--marigin-xs);
+  padding: var(--padding-xs);
+  margin-left: var(--marigin-xxl);
 }
